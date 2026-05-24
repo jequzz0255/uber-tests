@@ -2,19 +2,15 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
+  reporter: [['html', { open: 'never' }]],
   use: {
     baseURL: 'https://www.uber.com/pl/pl/',
-    headless: false,
   },
-  reporter: [['html', { open: 'always' }]],
   projects: [
     {
       name: 'chromium',
-      use: { 
+      use: {
         ...devices['Desktop Chrome'],
-        launchOptions: {
-          slowMo: 500,
-        },
       },
     },
   ],
