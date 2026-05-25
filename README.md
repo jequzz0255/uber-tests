@@ -76,7 +76,6 @@ npx playwright test
 
 - **CAPTCHA** — Uber stosuje CAPTCHA przy logowaniu. W profesjonalnym środowisku wymaga konta testowego z wyłączoną weryfikacją lub integracji z serwisem typu 2captcha
 - **SMS OTP** — weryfikacja kodem SMS wymaga wirtualnych numerów (np. Twilio API) lub obejścia po stronie backendu
-- **Rozszerzenie** — projekt można rozszerzyć o testy API, testy wydajnościowe (k6) i testy mobilne (Appium)
 
 ---
 
